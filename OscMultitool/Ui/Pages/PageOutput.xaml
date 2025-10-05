@@ -78,6 +78,7 @@
                     <StackPanel Style="{StaticResource HStackIndent}">
                         <CheckBox Content="Clear automatically after messages" IsChecked="{Binding Textbox.AutomaticClearMessage, Source={x:Static local:Config.Data}}"/>
                         <CheckBox Margin="0,4,0,0" Content="Clear automatically after notifications" IsChecked="{Binding Textbox.AutomaticClearNotification, Source={x:Static local:Config.Data}}"/>
+                        <CheckBox Margin="0,4,0,0" Content="Typing indicator when speaking" IsChecked="{Binding Textbox.UseIndicatorWhenSpeaking, Source={x:Static local:Config.Data}}"/>
                         <CheckBox Margin="0,4,0,0" Content="Typing indicator without Textbox" IsChecked="{Binding Textbox.UseIndicatorWithoutBox, Source={x:Static local:Config.Data}}"/>
 
                         <WrapPanel Margin="0,4,0,0">

@@ -258,7 +258,7 @@ namespace Hoscy.Services.Speech
             if (!mode && !_lastSet)
                 return;
 
-            if (mode && (_lastEnabled.AddSeconds(4) > DateTime.Now || (!Config.Speech.UseTextbox && !Config.Textbox.UseIndicatorWithoutBox)))
+            if (mode && (_lastEnabled.AddSeconds(4) > DateTime.Now || !Config.Textbox.UseIndicatorWhenSpeaking || (!Config.Speech.UseTextbox && !Config.Textbox.UseIndicatorWithoutBox)))
                 return;
 
             _lastEnabled = mode ? DateTime.Now : DateTime.MinValue;

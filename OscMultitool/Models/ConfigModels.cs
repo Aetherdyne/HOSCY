@@ -346,6 +346,7 @@ namespace Hoscy.Models
         //Visual
         public bool AutomaticClearNotification { get; set; } = true; //Automatic clearing after notification timeout
         public bool AutomaticClearMessage { get; set; } = false; //Automatic clearing after message timeout
+        public bool UseIndicatorWhenSpeaking { get; set; } = true; //"Typing" indicator when speaking
         public bool UseIndicatorWithoutBox { get; set; } = false; //"Typing" indicator when box is disabled
 
         public string NotificationIndicatorLeft //Text to the left of a notification
